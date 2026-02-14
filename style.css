@@ -16,20 +16,50 @@ body {
 .nav {
     position: fixed;
     width: 100%;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
     backdrop-filter: blur(20px);
     background: rgba(0,0,0,0.6);
     z-index: 1000;
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav > .logo,
+.nav > .nav-links {
+    max-width: 1200px;
+}
+
+.nav {
+    padding: 20px 0;
+}
+
+.nav .logo {
+    position: absolute;
+    left: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav .nav-links {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+
 .nav a {
     color: var(--text);
     text-decoration: none;
-    margin-left: 25px;
     font-size: 0.95rem;
+    transition: opacity 0.3s ease;
 }
+
+.nav a:hover {
+    opacity: 0.6;
+}
+
 
 .hero {
     height: 100vh;
