@@ -213,13 +213,14 @@ body {
 
 .feature-media {
     margin-top: 60px;
-    width: 80%;
-    max-width: 900px;
+    display: flex;
+    justify-content: center;
 }
 
 .feature-media video,
 .feature-media img {
-    width: 100%;
+    max-width: 85vw;   /* responsive scaling */
+    height: auto;
     border-radius: 20px;
     box-shadow: 0 40px 80px rgba(0,0,0,0.5);
 }
