@@ -199,3 +199,45 @@ body {
     transform: scale(1.05);
 }
 
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .headline {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .big-text {
+        font-size: 1.8rem;
+    }
+
+    .feature {
+        height: auto;
+        padding: 120px 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .feature-media {
+        width: 100%;
+    }
+
+    .publications,
+    .contact {
+        padding: 120px 20px;
+    }
+}
+
+
