@@ -219,12 +219,13 @@ body {
 
 .feature-media video,
 .feature-media img {
-    width: 100%;
-    max-width: 900px;       /* hard upper limit for desktop */
+    width: 75%;
+    max-width: 750px;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
 }
+
 
 /* Learn More Button */
 
