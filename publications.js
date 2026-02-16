@@ -6,7 +6,7 @@ const publications = [
   journal: "Nature Communications",
   volume: "16",
   pages: "1167",
-  link: "https://doi.org/10.1038/s41467-025-XXXXX"
+  link: "https://www.nature.com/articles/s41467-025-56562-x"
 },
 {
   year: 2025,
@@ -15,7 +15,7 @@ const publications = [
   journal: "Nanophotonics",
   volume: "14",
   pages: "547–558",
-  link: "https://doi.org/10.1515/nanoph-2025-XXXX"
+  link: "https://www.degruyterbrill.com/document/doi/10.1515/nanoph-2024-0657/html"
 },
 {
   year: 2023,
@@ -24,7 +24,7 @@ const publications = [
   journal: "ACS Applied Materials & Interfaces",
   volume: "16",
   pages: "1941–1949",
-  link: "#"
+  link: "https://pubs.acs.org/doi/full/10.1021/acsami.3c17293"
 },
 {
   year: 2023,
@@ -33,7 +33,7 @@ const publications = [
   journal: "Langmuir",
   volume: "40",
   pages: "1257–1265",
-  link: "#"
+  link: "https://pubs.acs.org/doi/full/10.1021/acs.langmuir.3c02713"
 },
 {
   year: 2022,
@@ -42,7 +42,7 @@ const publications = [
   journal: "Materials Horizons",
   volume: "9",
   pages: "1222–1231",
-  link: "#"
+  link: "https://pubs.rsc.org/en/content/articlehtml/2022/mh/d1mh01993g"
 },
 {
   year: 2022,
@@ -51,7 +51,7 @@ const publications = [
   journal: "Langmuir",
   volume: "38",
   pages: "11296–11303",
-  link: "#"
+  link: "https://pubs.acs.org/doi/full/10.1021/acs.langmuir.2c01477"
 },
 {
   year: 2021,
@@ -60,7 +60,7 @@ const publications = [
   journal: "Nature Communications",
   volume: "12",
   pages: "1727",
-  link: "#"
+  link: "https://www.nature.com/articles/s41467-021-21981-z"
 },
 {
   year: 2018,
@@ -69,7 +69,7 @@ const publications = [
   journal: "Applied Physics Letters",
   volume: "113",
   pages: "",
-  link: "#"
+  link: "https://pubs.aip.org/aip/apl/article/113/10/103702/35712"
 },
 {
   year: 2018,
@@ -78,7 +78,7 @@ const publications = [
   journal: "Physics of Fluids",
   volume: "30",
   pages: "",
-  link: "#"
+  link: "https://pubs.aip.org/aip/pof/article/30/7/072105/259082"
 },
 {
   year: 2017,
@@ -87,7 +87,7 @@ const publications = [
   journal: "Physics of Fluids",
   volume: "29",
   pages: "",
-  link: "#"
+  link: "https://pubs.aip.org/aip/pof/article/29/8/082104/982240"
 }
 ];
 
