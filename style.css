@@ -317,5 +317,28 @@ body {
     color: var(--secondary);
 }
 
+.year-heading {
+    margin-top: 80px;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.paper-text {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.paper-text a {
+    color: var(--text);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.paper-text a:hover {
+    opacity: 0.6;
+}
+
+
 
 
