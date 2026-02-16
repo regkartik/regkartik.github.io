@@ -103,7 +103,7 @@ body {
 }
 
 .headline {
-    font-size: 6rem;
+    font-size: clamp(2.5rem, 6vw, 6rem);
     font-weight: 600;
     margin: 0;
     opacity: 0;
@@ -252,10 +252,6 @@ body {
         gap: 16px;
     }
 
-    .headline {
-        font-size: 3rem;
-        text-align: center;
-    }
 
     .big-text {
         font-size: 1.8rem;
