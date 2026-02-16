@@ -84,10 +84,19 @@ body {
         display: flex;
     }
 
+       .feature {
+        height: auto;
+        padding: 100px 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+
     .nav-links a {
         font-size: 0.95rem;
     }
 }
+
+ 
 
 
 
@@ -149,7 +158,9 @@ body {
 }
 
 .feature h2 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-size: clamp(1.4rem, 5vw, 3rem);
+    line-height: 1.2;
+    word-break: break-word;
     margin-bottom: 20px;
 }
 
