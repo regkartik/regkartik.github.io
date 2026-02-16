@@ -19,7 +19,7 @@ body {
     position: fixed;
     width: 100%;
     backdrop-filter: blur(20px);
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.3);
     z-index: 1000;
 }
 
