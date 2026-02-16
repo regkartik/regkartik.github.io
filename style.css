@@ -343,6 +343,85 @@ body {
     opacity: 0.6;
 }
 
+/* ================= GROUP PAGE ================= */
+
+.group-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 140px 20px 60px 20px;
+}
+
+.group-section h1,
+.group-section h2 {
+    margin-bottom: 50px;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.pi-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pi-container img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.pi-description {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* 3-column grid */
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.member-card {
+    text-align: center;
+}
+
+.member-card img {
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.member-card p {
+    margin-top: 15px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .pi-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .member-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .member-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
 
 
