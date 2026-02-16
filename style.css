@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
     background: var(--bg);
     color: var(--text);
@@ -17,6 +18,8 @@ body {
 
 .nav {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     backdrop-filter: blur(20px);
     background: rgba(0,0,0,0.3);
@@ -295,9 +298,10 @@ body {
 
 .publications-page {
     max-width: 900px;
-    margin: 150px auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 140px 20px 80px 20px;
 }
+
 
 .publications-page h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
