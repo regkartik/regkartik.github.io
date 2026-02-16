@@ -26,7 +26,7 @@ body {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 24px;
+    padding: 18px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +36,12 @@ body {
     font-size: 1rem;
     font-weight: 500;
     white-space: nowrap;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -53,6 +59,38 @@ body {
 .nav-links a:hover {
     opacity: 0.6;
 }
+
+/* ================= MOBILE NAV ================= */
+
+@media (max-width: 900px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgba(0,0,0,0.95);
+        flex-direction: column;
+        width: 220px;
+        padding: 20px;
+        display: none;
+        gap: 18px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
+    }
+}
+
+
+
 
 
 
