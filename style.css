@@ -63,6 +63,11 @@ body {
     opacity: 0.6;
 }
 
+.logo-link {
+    color: var(--text);
+    text-decoration: none;
+}
+
 /* ================= MOBILE NAV ================= */
 
 @media (max-width: 900px) {
