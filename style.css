@@ -219,7 +219,8 @@ body {
 
 .feature-media video,
 .feature-media img {
-    max-width: 85vw;   /* responsive scaling */
+    width: 100%;
+    max-width: 900px;       /* hard upper limit for desktop */
     height: auto;
     border-radius: 20px;
     box-shadow: 0 40px 80px rgba(0,0,0,0.5);
