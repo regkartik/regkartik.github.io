@@ -291,5 +291,31 @@ body {
     max-width: 950px;  /* slightly larger desktop cap */
 }
 
+/* ================= PUBLICATIONS PAGE ================= */
+
+.publications-page {
+    max-width: 900px;
+    margin: 150px auto;
+    padding: 0 20px;
+}
+
+.publications-page h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 60px;
+}
+
+.paper {
+    margin-bottom: 40px;
+}
+
+.paper .title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.paper .meta {
+    color: var(--secondary);
+}
+
 
 
