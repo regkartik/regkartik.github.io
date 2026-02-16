@@ -284,4 +284,12 @@ body {
     }
 }
 
+/* Enlarge Leidenfrost video only */
+
+.leidenfrost-section .feature-media video {
+    width: 94%;        /* 75% × 1.25 ≈ 94% */
+    max-width: 950px;  /* slightly larger desktop cap */
+}
+
+
 
