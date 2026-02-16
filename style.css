@@ -393,6 +393,11 @@ body {
     text-align: center;
 }
 
+.nav-links a.active {
+    border-bottom: 2px solid white;
+}
+
+
 .member-card img {
     width: 100%;
     max-width: 250px;
