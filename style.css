@@ -208,11 +208,12 @@ img {
 }
 
 .feature {
-    height: 100vh;
+    padding: 120px 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 0 10%;
 }
+
 
 .feature.alt {
     background: linear-gradient(180deg, #0a0a0a, #111);
@@ -264,8 +265,6 @@ img {
 /* Research feature layout with media */
 
 .research-feature {
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
 }
 
@@ -289,7 +288,6 @@ img {
     width: 100%;
     max-width: 800px;   /* desktop cap */
     height: auto;
-    object-fit: contain;
 }
 
 
@@ -297,10 +295,11 @@ img {
 /* Learn More Button */
 
 .learn-more-container {
-    margin-top: 50px;
+    margin: 60px 0 0 0;
     display: flex;
     justify-content: center;
 }
+
 
 .learn-more-button {
     padding: 14px 36px;
