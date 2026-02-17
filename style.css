@@ -6,7 +6,6 @@
 
 body {
     margin: 0;
-    padding-top: 70px;  /* EXACT navbar height */
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
     background: var(--bg);
     color: var(--text);
@@ -21,14 +20,14 @@ body {
 /* ================= ANNOUNCEMENT BAR ================= */
 
 .announcement-bar {
-    position: relative;   /* NOT fixed */
     width: 100%;
     background: #111;
     color: white;
     text-align: center;
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 0.9rem;
 }
+
 
 
 
@@ -45,15 +44,15 @@ body {
 
 /* ================= NAVIGATION ================= */
 .nav {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
     height: 70px;
     backdrop-filter: blur(20px);
     background: rgba(0,0,0,0.6);
     z-index: 1000;
 }
+
 
 
 .nav-container {
@@ -336,8 +335,9 @@ body {
 .publications-page {
     max-width: 900px;
     margin: 0 auto;
-    padding: 140px 20px 80px 20px;
+    padding: 80px 20px;
 }
+
 
 
 .publications-page h1 {
@@ -385,8 +385,9 @@ body {
 .group-section {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 140px 20px 60px 20px;
+    padding: 80px 20px;
 }
+
 
 .group-section h1,
 .group-section h2 {
