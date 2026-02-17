@@ -45,6 +45,10 @@ body {
     opacity: 0.7;
 }
 
+body.no-announcement {
+    padding-top: 70px;  /* only navbar height */
+}
+
 
 /* ================= NAVIGATION ================= */
 .nav {
