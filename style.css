@@ -7,6 +7,7 @@
 body {
     margin: 0;
     padding: 0;
+    padding-top: 120px; 
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
     background: var(--bg);
     color: var(--text);
@@ -27,7 +28,13 @@ body {
     top: 0;
     left: 0;
     z-index: 2000;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 .announcement-bar a {
     color: white;
@@ -138,7 +145,6 @@ body {
 
 .hero {
     height: 100vh;
-    margin-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
