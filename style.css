@@ -382,6 +382,11 @@ body {
     text-align: justify;
 }
 
+.pi-description a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 
 /* 3-column grid */
 
