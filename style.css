@@ -569,6 +569,11 @@ html {
     opacity: 0.7;
 }
 
+body {
+    scrollbar-gutter: stable;
+}
+
+
 
 
 
