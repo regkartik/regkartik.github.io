@@ -43,7 +43,7 @@ body {
 
 .nav {
     position: fixed;
-    top: 0;
+    top: 40px;
     left: 0;
     width: 100%;
     backdrop-filter: blur(20px);
