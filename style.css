@@ -498,6 +498,16 @@ html {
     scroll-behavior: smooth;
 }
 
+.contact a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.contact a:hover {
+    opacity: 0.7;
+}
+
+
 
 
 
