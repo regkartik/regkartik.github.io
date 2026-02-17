@@ -539,12 +539,23 @@ html {
 .pi-info {
     max-width: 600px;
 }
-
 .pi-links {
     margin-top: 20px;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
+
+.pi-links a {
+    color: var(--text);
+    font-size: 24px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.pi-links a:hover {
+    transform: scale(1.15);
+    opacity: 0.7;
+}
+
 
 .pi-links img {
     width: 28px;
