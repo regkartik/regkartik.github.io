@@ -203,6 +203,11 @@ img {
     align-items: center;
 }
 
+.feature + .feature {
+    border-top: 1px solid #111;
+}
+
+
 
 .feature.alt {
     background: linear-gradient(180deg, #0a0a0a, #111);
