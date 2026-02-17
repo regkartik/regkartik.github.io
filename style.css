@@ -321,15 +321,6 @@ img {
         gap: 16px;
     }
 
-.feature {
-    min-height: 100vh;
-    padding: 100px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
     .feature-media {
         width: 100%;
     }
