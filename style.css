@@ -518,6 +518,25 @@ html {
     text-decoration: underline;
 }
 
+.map-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.map-container img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.map-container img:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+
 
 
 
