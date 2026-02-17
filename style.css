@@ -277,19 +277,21 @@ img {
 }
 
 .feature-media {
-    margin-top: 60px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 60px;
 }
 
-.feature-media video,
-.feature-media img {
-    width: 75%;
-    max-width: 750px;
+.feature-media img,
+.feature-media video {
+    display: block;
+    width: 100%;
+    max-width: 800px;   /* desktop cap */
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+    object-fit: contain;
 }
+
 
 
 /* Learn More Button */
@@ -331,13 +333,14 @@ img {
         gap: 16px;
     }
 
+.feature {
+    min-height: 100vh;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .feature {
-        height: auto;
-        padding: 120px 20px;
-        text-align: center;
-        flex-direction: column;
-    }
 
     .feature-media {
         width: 100%;
