@@ -280,11 +280,11 @@ img {
 .feature-media img,
 .feature-media video {
     display: block;
-    width: 100%;
-    max-width: 800px;
+    width: clamp(280px, 80vw, 800px);
     height: auto;
     border-radius: 12px;
 }
+
 
 
 
