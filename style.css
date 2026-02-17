@@ -536,6 +536,29 @@ html {
     opacity: 0.9;
 }
 
+.pi-info {
+    max-width: 600px;
+}
+
+.pi-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.pi-links img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.pi-links img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+
 
 
 
