@@ -280,9 +280,11 @@ img {
 .feature-media video {
     display: block;
     width: 100%;
-    max-width: 800px;   /* desktop cap */
+    max-width: 800px;
     height: auto;
+    border-radius: 12px;
 }
+
 
 
 
