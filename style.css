@@ -138,6 +138,7 @@ body {
 
 .hero {
     height: 100vh;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
