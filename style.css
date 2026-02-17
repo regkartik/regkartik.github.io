@@ -25,11 +25,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-
-
-
 /* ================= ANNOUNCEMENT BAR ================= */
 
 .announcement-bar {
@@ -148,13 +143,7 @@ img {
         display: flex;
     }
 
-       .feature {
-        height: auto;
-        padding: 100px 20px;
-        text-align: center;
-        flex-direction: column;
-    }
-
+      
     .nav-links a {
         font-size: 0.95rem;
     }
@@ -190,7 +179,7 @@ img {
 }
 
 .statement {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,7 +225,7 @@ img {
 }
 
 .publications {
-    padding: 200px 10%;
+    padding: 120px 10%;
 }
 
 .paper {
@@ -253,7 +242,7 @@ img {
 }
 
 .contact {
-    padding: 200px 10%;
+    padding: 120px 10%;
     text-align: center;
 }
 
