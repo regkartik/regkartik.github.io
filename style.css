@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 :root {
     --bg: #000;
     --text: #f5f5f7;
@@ -6,12 +13,18 @@
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+
     background: var(--bg);
     color: var(--text);
     overflow-x: hidden;
+
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
 
 
 
@@ -46,12 +59,19 @@ body {
 .nav {
     position: sticky;
     top: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    width: 100%;
+    height: 70px;
+
+    background: rgba(0, 0, 0, 0.85);  /* solid fallback */
+
     backdrop-filter: blur(20px);
-    background: rgba(0,0,0,0.6);
+    -webkit-backdrop-filter: blur(20px);  /* required for Chrome/Safari */
+
     z-index: 1000;
+
+    transform: translateZ(0); /* prevents Chrome jitter */
 }
+
 
 .nav-container {
     max-width: 1200px;
@@ -97,6 +117,13 @@ body {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
 /* ================= MOBILE NAV ================= */
 
 @media (max-width: 900px) {
@@ -141,7 +168,8 @@ body {
 
 
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
