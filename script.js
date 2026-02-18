@@ -3,31 +3,30 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.getElementById("menu-toggle");
     const navLinks = document.getElementById("nav-links");
 
-    // Toggle menu when hamburger is clicked
-    if (toggle && navLinks) {
-        toggle.addEventListener("click", function (e) {
-            e.stopPropagation(); // prevent event bubbling
-            navLinks.classList.toggle("show");
-        });
+    if (!toggle || !navLinks) return;
 
-        // Close menu when clicking anywhere outside
-        document.addEventListener("click", function (e) {
-            if (
-                navLinks.classList.contains("show") &&
-                !navLinks.contains(e.target) &&
-                !toggle.contains(e.target)
-            ) {
-                navLinks.classList.remove("show");
-            }
-        });
+    // Toggle menu
+    toggle.addEventListener("click", function (e) {
+        e.stopPropagation();
+        navLinks.classList.toggle("show");
+    });
 
-        // Optional: Close menu when clicking a link
-        const links = navLinks.querySelectorAll("a");
-        links.forEach(link => {
-            link.addEventListener("click", () => {
-                navLinks.classList.remove("show");
-            });
+    // Close when clicking outside
+    document.addEventListener("click", function (e) {
+        if (
+            navLinks.classList.contains("show") &&
+            !navLinks.contains(e.target) &&
+            !toggle.contains(e.target)
+        ) {
+            navLinks.classList.remove("show");
+        }
+    });
+
+    // Close when ANY nav link is clicked (including # anchors)
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function () {
+            navLinks.classList.remove("show");
         });
-    }
+    });
 
 });
