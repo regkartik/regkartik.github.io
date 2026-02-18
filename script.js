@@ -1,22 +1,29 @@
-const animatedElements = document.querySelectorAll(
-  ".headline, .big-text"
-);
+document.addEventListener("DOMContentLoaded", function () {
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.add("active");
-        }
-    });
-}, { threshold: 0.3 });
+    // Scroll animations
+    const animatedElements = document.querySelectorAll(
+        ".headline, .big-text"
+    );
 
-animatedElements.forEach(el => observer.observe(el));
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            }
+        });
+    }, { threshold: 0.3 });
 
-// Mobile menu toggle
-const toggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+    animatedElements.forEach(el => observer.observe(el));
 
-toggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+
+    // Mobile menu toggle
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    if (toggle && navLinks) {
+        toggle.addEventListener("click", function () {
+            navLinks.classList.toggle("show");
+        });
+    }
+
 });
-
