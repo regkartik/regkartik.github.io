@@ -1,17 +1,34 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    /* ================= SCROLL ANIMATION ================= */
+
+    const animatedElements = document.querySelectorAll(
+        ".headline, .big-text"
+    );
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    animatedElements.forEach(el => observer.observe(el));
+
+
+    /* ================= MOBILE NAV ================= */
+
     const toggle = document.getElementById("menu-toggle");
     const navLinks = document.getElementById("nav-links");
 
     if (!toggle || !navLinks) return;
 
-    // Toggle menu
     toggle.addEventListener("click", function (e) {
         e.stopPropagation();
         navLinks.classList.toggle("show");
     });
 
-    // Close when clicking outside
     document.addEventListener("click", function (e) {
         if (
             navLinks.classList.contains("show") &&
@@ -22,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Close when ANY nav link is clicked (including # anchors)
     navLinks.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", function () {
             navLinks.classList.remove("show");
